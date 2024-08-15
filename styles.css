@@ -41,6 +41,32 @@ body {
     display: grid;
 
 }
+/* Gallery Section */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+}
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+
+}
+.gallery-item img{
+    display: block;
+    width: 90%;
+    height: 90%;
+   object-fit: cover;
+}
+.gallery-item:hover{
+    filter: brightness(70%);
+    transition: .2s;
+}
+.gallery-item-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 img {
     display: block;

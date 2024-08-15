@@ -17,6 +17,30 @@ body {
     color: #262626;
     padding-bottom: 3rem;
 }
+/* Profile Section */
+.profile{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.profile-image{
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
+.profile-user-settings{
+    display: flex;
+}
+.profile-stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.profile-bio{
+    position: relative;
+    display: grid;
+
+}
 
 img {
     display: block;

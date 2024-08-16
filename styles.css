@@ -28,8 +28,7 @@ body {
 }
 .profile-image{
     display: flex;
-    width: 10%;
-    height: 10%;
+    width: calc(33% - 1rem);
     float: left;
     justify-content: center;
     align-items: center;
@@ -45,9 +44,31 @@ body {
     display: flex;
     justify-content: center;
 }
-
+.profile-user-settings,
+.profile-stats,
+.profile-bio{
+    float: left;
+}
+.profile-user-settings{
+    margin-top: 10px;
+}
 .profile-user-name{
-    display: grid;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+}
+.profile-edit-btn{
+    font-size: 1em;
+    line-height: 2.5;
+    border: 1rem solid #fafafa;
+    border-radius: 4rem;
+    padding: .3rem;
+    margin-right: .2rem;
+}
+.profile-settings-btn{
+    font-size: 1em;
+    line-height: 1;
+    margin-left: .3rem;
 }
 .profile-user-settings{
     display: flex;
@@ -55,15 +76,22 @@ body {
     align-items: center;
 }
 .profile-stats{
-    display: flex;
-    flex-direction: column;
+    margin-top: 4rem;
 }
-.profile-bio{
-    display: grid;
-    
-    justify-content: flex-start;
+,.profile-stats li{
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 2;
+    margin-right: 5rem;
+}
 
+.profile-bio{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 2;
+    margin-top: 3rem;
 }
+
 /* Gallery Section */
 
 .gallery{

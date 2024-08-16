@@ -18,8 +18,9 @@ body {
     padding-bottom: 3rem;
 }
 /* Profile Section */
+
 .profile{
-    padding: 8rem 0;
+    padding: 10px 0;
 }
 .profile::after{
     content:"";
@@ -28,15 +29,17 @@ body {
 }
 .profile-image{
     display: flex;
-    width: calc(33% - 1rem);
+    width: calc(33% - 10px);
     float: left;
     justify-content: center;
     align-items: center;
     margin-right: 3px;
 }
 .profile-image img{
+    background-color: lightgreen;
     border-radius: 60%;
-    background-color: aqua;
+    border: 10px black;
+
 }
 
 .profile{
@@ -58,12 +61,12 @@ body {
     font-weight: 300;
 }
 .profile-edit-btn{
-    font-size: 1em;
+    font-size: 10px;
     line-height: 2.5;
-    border: 1rem solid #fafafa;
-    border-radius: 4rem;
-    padding: .3rem;
-    margin-right: .2rem;
+    border: 10px solid #fafafa;
+    border-radius: 40%;
+    padding: 3px;
+    
 }
 .profile-settings-btn{
     font-size: 1em;
@@ -78,11 +81,11 @@ body {
 .profile-stats{
     margin-top: 4rem;
 }
-,.profile-stats li{
+.profile-stats li{
     display: inline-block;
-    font-size: 2rem;
+    font-size: 10px;
     line-height: 2;
-    margin-right: 5rem;
+    margin-right: 10px;
 }
 
 .profile-bio{
@@ -91,6 +94,11 @@ body {
     line-height: 2;
     margin-top: 3rem;
 }
+.profile-real-name,
+.profile-stat-count,
+.profile-edit-btn{
+    font-weight: 300;
+}
 
 /* Gallery Section */
 
@@ -98,27 +106,62 @@ body {
     display: grid;
     grid-template-columns: repeat(3,minmax(100px,1fr));
 }
+
 .gallery-item{
+    position: relative;
+    color: #fafafa;
+    cursor:pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+.gallery-item-info{
     position: relative;
     overflow: hidden;
 
 }
-.gallery-item img{
-    display: grid;
-    width: 80%;
-    height: 80%;
-   object-fit: cover;
+
+.gallery-item-likes{
+    margin-right: 20px;
+}
+.gallery-item-type{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    font-size: 3rem;
+    text-shadow: .2rem .2rem .2rem rgba(255, 255, 255, 0.1)
+}
+.fa-clone
+.fa-comment{
+    transform:rotateY(180deg)
+}
+.gallery-image{
+    width:100%;
+    height: 100%;
 }
 .gallery-item:hover{
     filter: brightness(70%);
     transition: .2s;
 }
-.gallery-item-info{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+/* loading circle*/
+.loader{
+    width: 3px;
+    height: 3px;
+    border: 0.5px;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: loader 300ms linear infinite;
 }
-
 img {
     display: block;
 }

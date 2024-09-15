@@ -53,13 +53,13 @@ img{
   font-weight: bold;
 }
 
-.profile-stats {
+.profile-stats > * {
     display: inline-block;
     margin-left: 10px;
 }
 
 .profile-stats ul {
-    display: inherit;
+    padding: 10px 0 0
 }
 
 .profile-stats ul li{

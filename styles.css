@@ -115,8 +115,17 @@ img.gallery-image{
     display: none;
 }
 
-/*--LAYOUT --*/
+/*-- PROFILE LAYOUT --*/
+.profile{
+    display: flex;
+    margin: 8px;
+}
 
+.profile .profile-user-settings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* loading circle*/
 .loader{

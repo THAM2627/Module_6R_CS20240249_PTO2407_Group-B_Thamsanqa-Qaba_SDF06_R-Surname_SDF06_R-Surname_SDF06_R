@@ -104,7 +104,7 @@ img.gallery-image{
 
 .gallery-item-info:hover{
     opacity: 1;
-    background-color:grey
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 .gallery-item-info ul { 
@@ -125,6 +125,17 @@ img.gallery-image{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* -- Gallery Layout --*/
+
+.gallery{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding-left: 50px;
 }
 
 /* loading circle*/

@@ -77,17 +77,6 @@ img{
 .profile{
     padding: 10px 0;
 }
-.profile::after{
-    content:"";
-    display:block;
-    clear:both
-}
-
-.profile{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
 
 /* Gallery Section */
 
@@ -127,6 +116,7 @@ img.gallery-image{
 }
 
 /*--LAYOUT --*/
+
 
 /* loading circle*/
 .loader{
